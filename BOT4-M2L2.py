@@ -12,10 +12,12 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 @bot.event
 async def on_ready():
     print(f'We have logged in as {bot.user}')
-
+    
 @bot.command()
 async def hello(ctx):
     await ctx.send(f'Hola, soy un bot {bot.user}!')
+    await ctx.send(f'Puedes usar los siguientes comandos: ')
+    await ctx.send("Comandos: $hello, $heh (numero), $password (numero), $repeat (palabra), $add (numero)(numero), $mem, $duck, $gato, $plastico (botella, bolsa, plato, cubiertos, pajilla)")
 
 @bot.command()
 async def heh(ctx, count_heh = 5):
