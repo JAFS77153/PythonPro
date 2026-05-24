@@ -1,0 +1,29 @@
+@keyframes danger {  
+  0%   { color: #ff0000; }
+  50%  { color: #ffa0a091; }
+  100% { color: #ff0000; }
+}
+@keyframes color-change {
+  0%   { color: rgb(111, 0, 255); }
+  50%  { color: rgb(255, 72, 0); }
+  100% { color: rgb(111, 0, 255); }
+}
+
+body {
+    font-family: Arial,  sans-serif; /* Familia de fuentes */
+    font-size: 18px; /* El tamaño de la fuente principal en el tag <p></p> */
+    background-color: #e6e6e6; /* El color del fondo de la página web */
+    color: #000000; /* El color del texto*/ 
+}
+h1{
+    color: #FD98FB; /* El color de la cabecera */
+    font-size: 36px; /* El tamaño de la fuente de la cabecera */
+    font-family: Arial,  sans-serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: danger 3s infinite; 
+}
+h2:hover{
+    color: #26008d;
+}
+Li:hover{
+    animation: color-change 3s infinite;
+}
